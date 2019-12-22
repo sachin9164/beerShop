@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: black !important;
+            position: sticky !important;
+        }
+        .navbar img{
+            width: 150px;
+            height: 50px;
+        }
+        #dropdow{
+          margin-left: 900px;
+          
+        }
+        .dropdown-item{
+          display: relative;
+          z-index: 2;
+        }
+    </style>
+</head>
+<body>
+   
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#"><h3 style="color: white;">BIRA</h3></a>
+    <img src="https://bira91.com/sites/default/files/bira-logo.png" alt="" srcset="">
+    <div id="dropdow">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cart
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        
+          <li class="dropdown-item">Items in Cart</li>
+          <li  class="dropdown-item"> Items : <span id="item" class="badge badge-primary badge-pill">0</span></li>
+          <li class="dropdown-item"> <span class="badge badge-primary badge-pill">BUY NOW</span> </li>
+        </div>
+      </div>
+    </div>
+    
+ </nav>
+    
+<!--Search Bar-->
+<br><br>
+<div class="container">
+    <img src="https://bira91.com/themes/bira/images/birashop_logo.png" alt="" srcset=""><br><br>
+   <!--  <p class="display-4">Search what you like!</p> -->
+    <div class="input-group mb-3">
+        <input type="text" id="input" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+        </div>
+    </div>
+</div>
+
+<!--List items-->
+
+<div class="container">
+<div class="row" id='row'>
+
+   <div  class="col-3"> <h4>Recent Searches ...</h4> <br>
+    <ul id="list"  class="list-group" >
+        <li  class="list-group-item d-flex justify-content-between align-items-center">
+          Beera Boom
+          <span class="badge badge-primary badge-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Old Monk
+          <span class="badge badge-primary badge-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Carlsberg
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          White and Black
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Tuborg
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+        
+      </ul>
+   </div>
+   <div class="col-9">
+
+
+
+    <div id='card' class="card mb-3" style="max-width: 540px;">
+        
+     </div>
+   </div>
+</div>
+</div>
+<script src="beera.js"></script>
+</body>
+</html>
